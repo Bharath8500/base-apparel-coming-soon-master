@@ -50,11 +50,12 @@ html, body{
     height: 100%;
     padding-left: 10%;
     border-radius: 50px;
+    font-size: 1vw;
 }
 .input-field .arrow-img{
     position: relative;
     left: 78%;
-    top: -100%;
+    top: -200%;
     width: 22%;
     height: 100%;
     background: linear-gradient(135deg ,hsl(0, 80%, 86%), hsl(0, 74%, 74%));
@@ -66,9 +67,27 @@ html, body{
     transition: all 0.5s;
     box-shadow: 5px 5px 10px 1px var(--Desaturated_Red);
 }
+.input-field .wrong-email{
+    position: relative;
+    left: 63%;
+    top: -100%;
+    width: 20%;
+    height: 100%;
+    cursor: pointer;
+    display: flex;
+    align-items: end;
+    justify-content: center;
+    transition: all 0.5s;
+    opacity: 0;
+}
 .arrow-img:hover{
     box-shadow: 10px 5px 10px 5px hsl(0, 13%, 58%);
-    background: linear-gradient(135deg ,hsl(0, 67%, 93%), hsl(0, 13%, 58%));
+    background: linear-gradient(135deg ,hsl(0, 80%, 86%), hsl(0, 13%, 58%));
+}
+#valid{
+    padding-left: 10%;
+    margin-top: 2%;
+    opacity: 0;
 }
 .right-side{
     width: 35%;
