@@ -43,6 +43,7 @@ html, body{
     font-size: 6vw;
     letter-spacing: 2vw;
     font-weight: 300;
+    text-transform: uppercase;
 }
 .box3 > :nth-child(2){
     font-size: 4vw;
@@ -106,4 +107,52 @@ html, body{
     padding-left: 10%;
     margin-top: 2%;
     opacity: 0;
+}
+
+/* Responsiveness */
+
+@media (max-width:600px) {
+    .container{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .box1{
+        width: 100%;
+        padding-left: 10%;
+        margin-top: 5%;
+        margin-bottom: 5%;
+    }
+    .box2{
+        width: 100%;
+        height: 50%;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: top;
+        margin-bottom: 10%;
+    }
+    .box3{
+        text-align: center;
+        padding-right: 5%;
+    }
+    .box3 > :nth-child(1){
+        font-size: 10vw;
+        margin-left: -15%;
+    }
+    .box3 > :nth-child(2){
+        margin-left: -15%;
+        font-size: 10vw;
+    }
+    .box3 p{
+        font-size: 4vw;
+        padding-right: 0;
+        margin-left: -15%;
+    }
+    .input-field{
+        margin-left: -15%;
+        margin-right: -1%;
+        height: 15%;
+    }
+    .box3 input{
+        font-size: 5vw;
+    }
 }
